@@ -8,6 +8,10 @@ router.get('/ping', (req, res) => {
   res.send('pong');
 });
 
+router.get('/UrlDB', (req, res) => {
+  res.send(process.env.DATABASE_URL);
+});
+
 router.post('/register', (req, res) => {
   const username = req.body.username;
   return authHelpers.createUser(req, res)

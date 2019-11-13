@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:10.17.0-stretch
 
 # set working directory
 WORKDIR /usr/app
